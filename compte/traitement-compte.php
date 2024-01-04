@@ -9,7 +9,7 @@
     
 <?php
 
-require("compte.php");
+include("compte.php");
 
 $compte1 = new Compte("1", "Thierry", 1000);
 
@@ -21,7 +21,8 @@ $compte2 -> depot(1000);
 
 echo $compte2 -> affiche() . "<br>";
 
-$compte3 = new CompteAnonyme("3", 15000);
+$compte3 = new CompteAnonyme("3", 2000);
+// $compte3 -> depot(1000);
 
 echo $compte3 -> affiche() . "<br>";
 
